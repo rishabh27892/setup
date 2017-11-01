@@ -1,0 +1,46 @@
+INITIAL INSTALL FOR MY UBUNTU
+GOOGLE CHROME
+sudo nano /etc/apt/sources.list
+#scroll to the end and paste
+deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
+#save and exit the file 
+wget https://dl.google.com/linux/linux_signing_key.pub
+sudo apt-key add linux_signing_key.pub
+sudo apt update
+sudo apt install google-chrome-stable
+sudo apt-get -f install
+
+GIT
+apt-get install git
+git config --global user.name "rishabh27892"
+git config --global user.email "rishabh.chauhan27892@gmail.com"
+git clone https://github.com/iXsystems/ixbuild
+git clone https://github.com/iXsystems/ixautomation
+
+TELEGRAM
+sudo add-apt-repository ppa:atareao/telegram
+sudo apt-get update
+sudo apt-get install telegram
+https://tdesktop.com/linux
+
+SLACK
+#Go to http://slack.com/downloads and select Ubuntu (either 32 or 64 bit) and press Download button. change the version in the command to the version you downloaded
+sudo dpkg -i slack-desktop-1.2.6-amd64.deb
+
+WHATSAPP
+# go to https://askubuntu.com/questions/684415/install-whatsapp-webapp-on-ubuntu
+sudo dpkg -i whatsapp-webapp_1.0_all.deb
+SELENIUM
+sudo apt-get install python-pip 
+sudo pip install --upgrade pip
+sudo pip install selenium
+sudo apt-get install python-pytest
+
+GECKODRIVER(FIREFOX WEBDRIVER)
+git clone https://github.com/rishabh27892/webui-test-files/
+cd webui-test-files/
+tar -xvzf geckodriver-v0.11.1-linux64.tar.gz
+chmod +x geckodriver
+sudo cp geckodriver /usr/local/bin/
+cd ~/
+rm -rf webui-test-files/
