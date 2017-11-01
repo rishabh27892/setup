@@ -44,3 +44,20 @@ chmod +x geckodriver
 sudo cp geckodriver /usr/local/bin/
 cd ~/
 rm -rf webui-test-files/
+
+VPN
+#Connect to the wi-fi, WiFi Icon (right click) -> Edit Connections -> IPV4 tab (?) -> IPV4 (Addresses Only) in the drop down, then put in "10.246.0.2,10.250.0.6" in for DNS.
+cd /etc/
+cp resolv.conf resolve_new.conf
+sudo nano resolv.conf
+#add 
+domain ixsystems.com
+search ixsystems.com
+nameserver 10.250.0.6
+#save
+
+Download file from docs.ixsystems.com
+cd ~/Download/ix-vpn/sj/
+sudo openvpn vpn-2490.ixsystems.com.ovpn
+#enter credentials and check docs.ixsystems.com
+
