@@ -37,6 +37,7 @@ sudo apt-get install python-pip
 sudo pip install --upgrade pip
 sudo pip install selenium
 sudo apt-get install python-pytest
+sudo pip install xmlrunner
 
 GECKODRIVER(FIREFOX WEBDRIVER)
 git clone https://github.com/rishabh27892/webui-test-files/
