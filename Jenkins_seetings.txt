@@ -1,0 +1,24 @@
+Sudo pc-updatemanager pkgupdate
+#then shutdown and turn on the computer (not reboot)
+
+#Super user
+su
+#install jenkins
+pkg install jenkins
+#enable jenkins service
+sysrc jenkins_enable="YES"
+#start jenkins service
+service jenkins start
+#turnoff firewall
+sudo service ipfw stop
+
+#Mozilla-
+http://localhost:8180/jenkins/     
+http://<HOST_IP>:8180/jenkins/
+
+
+
+http://10.250.1.85:8180/jenkins/
+
+
+*Hindi main jise jwala kehte hai, wahi tumhe rasta dikhaegi! Jo chabi sab jaga lagti hai, wahi tumhara tala kholegi
